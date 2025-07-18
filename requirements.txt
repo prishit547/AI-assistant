@@ -1,0 +1,38 @@
+# JARVIS AI Assistant Project
+# Python 3.10+
+
+# --- Core Components ---
+Flask
+Flask-Cors
+Flask-SocketIO
+
+google-generativeai  # For Gemini API access
+python-dotenv       # For managing environment variables (like API keys)
+
+# --- Speech-to-Text (STT) ---
+# Using a faster version of Whisper
+faster-whisper
+sounddevice         # For microphone input/output across platforms
+scipy               # For handling audio data (e.g., saving to .wav)
+numpy               # For numerical operations on audio arrays
+soundfile           # For reading and writing audio files
+ffmpeg-python       # For direct ffmpeg-based audio conversion
+
+# --- Text-to-Speech (TTS) ---
+# Using Piper for fast, local, and high-quality voice output
+piper-tts
+
+# --- Vision (Object Detection & Visual Understanding) ---
+ultralytics         # For YOLOv8 object detection
+opencv-python       # For accessing webcam and image processing
+torch               # Core deep learning framework
+torchvision         # For vision-related datasets and models
+torchaudio          # For audio processing with PyTorch
+pillow              # For image manipulation
+transformers        # For using models like LLaVA from Hugging Face
+
+# --- Optional RAG (Retrieval-Augmented Generation) Module ---
+langchain           # Framework for building context-aware applications
+faiss-cpu           # For efficient similarity search (local vector store)
+pypdf               # For loading and parsing PDF documents
+sentence-transformers # For creating text embeddings
